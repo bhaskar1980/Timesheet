@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>My App</title>
     <meta charset="utf-8" />
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
 
@@ -11,6 +11,22 @@
     
 </head>
 <body>
-    
+    <div id="home" data-role="view" data-layout="default">
+        Hello Mobile World!
+    </div>
+    <section data-role="layout" data-id="default">
+        <header data-role="header">
+            <div data-role="navbar">My App</div>
+        </header>
+        <!--View content will render here-->
+        <footer data-role="footer">
+            <div data-role="tabstrip">
+                <a href="#home">Home</a>
+            </div>
+        </footer>
+    </section>
+<script>
+    var app = new kendo.mobile.Application();
+</script>
 </body>
 </html>

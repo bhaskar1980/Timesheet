@@ -27,16 +27,16 @@
     </div>
     <div class="col-xs-12">
       <div class="input"> <span><img src="images/icon-email.png" alt=""></span>
-        <input type="email" placeholder="Email" name="">
+        <input type="email" placeholder="Email" name="txtemail" id="txtemail">
       </div>
     </div>
     <div class="col-xs-12">
       <div class="input"> <span><img src="images/icon-lock.png" alt=""></span>
-        <input type="password" placeholder="Password" name="">
+        <input type="password" placeholder="Password" name="txtpassword" id="txtpassword" >
       </div>
     </div>
     <div class="col-xs-12">
-    	<input name="" type="button" value="Sign In" class="btn btn-lg">
+    	<input name="btnsingin" id="btnsingin" type="button" value="Sign In" class="btn btn-lg">
     </div>
   </div>
 </div>
@@ -48,5 +48,6 @@
 </body>
     <script>
     var app = new kendo.mobile.Application();
+        var email = $("txtemail")
 </script>
 </html>
